@@ -1,0 +1,14 @@
+<div class="container">
+  
+  
+<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" [(ngModel)]="emailform"> 
+  <button type="button" class="btn btn-primary" [disabled]="!Allownewserver" (click)="OnServerCreated()">Primary</button>
+
+  {{NewserverStatus}}
+
+<div *ngIf="Ifstatus">
+    Test
+    </div>
+
+
+</div>
